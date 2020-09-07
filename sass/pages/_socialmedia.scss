@@ -1,0 +1,67 @@
+// Find Variables in abstract/_variables.scss
+@import "../abstracts/variables";
+// Find base items in base/_base.scss
+@import "../base/base";
+
+// Content Social Media
+.socialmedia {
+  align-items: center;
+  display: flex;
+  transition: transform 1s ease-in-out;
+  &:hover {
+    transform: translateX(calc(-100% + 60px));
+  }
+
+  &.__blog {
+    background-color: $primary-color;
+    border-bottom: $bordersocial;
+    &:hover {
+      background-color: $blog;
+    }  
+  }
+
+  &.__facebook {
+    background-color: $primary-color;
+    border-bottom: $bordersocial;
+    &:hover {
+      background-color: $fb;
+    }
+  }
+
+  &.__twitter {
+    background-color: $primary-color;
+    border-bottom: $bordersocial;
+    &:hover {
+      background-color: $twitter;
+    }
+  }
+
+  &.__github {
+    background-color: $primary-color;
+    border-bottom: $bordersocial;
+    &:hover {
+      background-color: $github;
+    }
+  }
+
+  &.__linkedin {
+    background-color: $primary-color;
+    &:hover {
+      background-color: $linkedin;
+    }
+  }
+  // FontAwesome
+  & i {
+    color: #fff;
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+    width: 60px;
+  }
+
+  & a {
+    color: #fff;
+    padding: 0 10px;
+  }
+}
+

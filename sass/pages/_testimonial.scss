@@ -1,0 +1,74 @@
+// Find typography
+@import "../base/typography";
+// Find global reset
+@import "../base/base";
+// Variables
+@import "../abstracts/variables";
+body {
+  /* REQUIREMENT */
+  background: $backgroundpage;
+  font-family: $font;
+  margin: 0;
+  /* SET Flexbox */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 600px;
+}
+
+/* CONTAINER */
+.testimonial__container {
+  display: flex;
+  max-width: 350px;
+}
+
+/* TESTIMONIAL Global CSS */
+.testimonial {
+  /* REQUIREMENT background #fff */
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px grey;
+  overflow: hidden;
+  max-width: 100%;
+  width: 400px;
+}
+
+/* TESTIMONIAL BODY */
+.testimonial__body {
+  /* TOP R + L BOTTOM */
+  padding: 40px 40px 80px;
+  & p {
+    color: gray;
+    font-size: 20px;
+    line-height: 36px;
+    margin: 0;
+  }
+}
+
+/* TESTIMONIAL FOOTER */
+
+.testimonial__footer {
+  /* REQUIREMENT */
+  background-color: #686de0;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+  & img {
+    border-radius: 50%;
+    border: 5px solid #fff;
+    height: 120px;
+    width: 120px;
+    margin-top: -100px;
+  }
+  & h3 {
+    margin: 10px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  & h4 {
+    color: #b3b5ef;
+    margin: 0;
+    letter-spacing: 1px;
+  }
+}
